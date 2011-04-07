@@ -46,10 +46,12 @@ I. Client
 
 
 - Install Binary Packages
+
 In case of using binary packages, there is nothing different in Windows and UNIX. Thus, just go to the download page! After extracting the package you downloaded, you should find two directories Debug and Release that contains debug version 
 headers/libs and release version headers/libs, respectively.
 	
 - Build from Source
+
 Source code can be obtained via SVN. Again, see download page to get it. Notice followed build procedure reuqires CMake and GCC/Visual C++ installed in your environment. 
 
 UNIX:
