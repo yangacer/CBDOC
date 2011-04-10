@@ -67,7 +67,10 @@ WIN:
 	install-win.bat PathYouLikeToInstall
 
 ###1.2 Hello CloudBase
-
+	
+	// ---- HelloCB.c -----
+	//
+	// The only header you need
 	#include "CloudAgent/CWrapper.h"
 
 	int 
@@ -108,6 +111,23 @@ WIN:
 		return 0;	
 	}
 
+To compile this example:
+	
+	gcc HelloCB.c -I/usr/local/include -IPathYouLikeToInstall/include \ 
+		-L/usr/local/lib -LPathYouLikeToInstall/lib \
+		-lcloudagent -lACE -lGUtils -lMD5CC
+
+	(Pretty much, unh? That's another story we'll never tell you.)
+
+For windows users
+	
+	-I Include search path.
+	-L Library search path.
+	-l Library name to linked.
+
+If you are family with CMake build script, we recommand you to take a look
+CMakeLists.txt located in CloudAgentRepo/example/c-binding.
+
 After executing ./HelloCB myfile 'name:/HelloCB.file;owner:newby'
 
 	Feedback:
@@ -129,3 +149,4 @@ After executing ./HelloCB myfile 'name:/HelloCB.file;owner:newby'
 	@md5:56ae2855587cab9a1db426b20782be5c
 	@owner:newby
 
+###1.3 Basic Operation
