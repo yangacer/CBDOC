@@ -1,9 +1,9 @@
+
 #OUTLINE
 
 ##__I. Introduction__
 
-Big Picture
-![CloudBase-arch.png](http://140.123.101.146/NUWeb_Site.cht/show_page.php?file_path=dir_024/dir_004/dir_001/file_001.png "CloudBase Architecture")
+	[To be added]
 
 ##__II. Client__
 
@@ -24,6 +24,9 @@ Big Picture
 	
 	1.5 Example Application - Cloudback
 	
+	1.6 [Doxygen Document](http://yangacer.twbbs.org/CloudAgent/html/CloudAgent_8h.html)
+
+
 ##__III. Server__
 
 1. CloudGate
@@ -153,8 +156,8 @@ After executing ./HelloCB myfile 'name:/HelloCB.file;owner:newby'
 
 Meta fields are assembled as 
 
-> field_name:value;[field_name:value;[...]]
-> e.g. "name:/myDoc/report.txt;desc:Seminar-Report;tag:report,seminar"
+	field_name:value;[field_name:value;[...]]
+	e.g. "name:/myDoc/report.txt;desc:Seminar-Report;tag:report,seminar"
 
 ####1. Must Have Fields
 
