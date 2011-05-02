@@ -1,6 +1,11 @@
-OUTLINE
-====
-__I. Client__
+#OUTLINE
+
+__I. Introduction__
+
+Big Picture
+![CloudBase-arch.png](http://140.123.101.146/Internal_Site/show_page.php?file_path=Member/yang-acer/file_002.png "CloudBase Architecture")
+
+__II. Client__
 ----
 1. CloudAgent
 
@@ -13,16 +18,13 @@ __I. Client__
 			
 	1.2 Hello CloudBase
 	
-	1.3 Basic Operations
+	1.3 Meta Fields
 	
-		- Put
-		- Get
-		- List
-		- Delete
-		
-	1.3 Example Application - Cloudback
+	1.4 More Examples
 	
-__II. Server__
+	1.5 Example Application - Cloudback
+	
+__III. Server__
 ----
 1. CloudGate
 
@@ -36,11 +38,9 @@ __II. Server__
 	
 	1.2 Run
 
-CONTENT
-====	
+#CONTENT
 
-I. Client
----
+##I. Client
 
 ###1.1 Installation/Building
 
@@ -126,7 +126,7 @@ For windows users
 	-l Library name to linked.
 
 If you are family with CMake build script, we recommand you to take a look
-CMakeLists.txt located in CloudAgentRepo/example/c-binding.
+MakeLists.txt located in CloudAgentRepo/example/c-binding.
 
 After executing ./HelloCB myfile 'name:/HelloCB.file;owner:newby'
 
@@ -149,4 +149,16 @@ After executing ./HelloCB myfile 'name:/HelloCB.file;owner:newby'
 	@md5:56ae2855587cab9a1db426b20782be5c
 	@owner:newby
 
-###1.3 Basic Operation
+###1.3 Meta Fields
+
+####1.3.1 Must Have Fields
+
+- name The path name of a file. You can use path delimiters either '\' or '/'.
+  The CloudBase provides prefix name listing similar to a tradition file system.
+  See basic operation - list for more information.
+
+- size Size of a file. Notice the CloudAgent client library will fill out this
+  field automatically. When one specify this field as zero, only meta fields 
+  will be created in CloudGate.
+
+- 
