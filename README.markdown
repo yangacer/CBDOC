@@ -151,7 +151,12 @@ After executing ./HelloCB myfile 'name:/HelloCB.file;owner:newby'
 
 ###1.3 Meta Fields
 
-####1.3.1 Must Have Fields
+Meta fields are assembled as 
+
+> field_name:value;[field_name:value;[...]]
+> e.g. "name:/myDoc/report.txt;desc:Seminar-Report;tag:report,seminar"
+
+####1. Must Have Fields
 
 - name The path name of a file. You can use path delimiters either '\' or '/'.
   The CloudBase provides prefix name listing similar to a tradition file system.
@@ -161,4 +166,29 @@ After executing ./HelloCB myfile 'name:/HelloCB.file;owner:newby'
   field automatically. When one specify this field as zero, only meta fields 
   will be created in CloudGate.
 
-- 
+- owner [PRESERVED]
+
+####2. Optional Fields
+
+- desc Description string.
+
+- type [PRESERVED]
+
+- ctime Created time of format yyyyMMddhhmmss.
+
+- mtime Modified time of format yyyyMMddhhmmss.
+
+- tzone Time zone of format [-]offset to UTC.
+
+- fattr File attributes.
+
+- allowed [PRESERVED].
+
+- tag Tag strings of format tag[','tag[...]].
+
+####3. Automatic Generated Fields
+
+- oid ObjectID.
+
+- md5 MD5 digest.
+
