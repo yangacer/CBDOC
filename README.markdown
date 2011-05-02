@@ -3,7 +3,7 @@
 __I. Introduction__
 
 Big Picture
-![CloudBase-arch.png](http://140.123.101.146/Internal_Site/show_page.php?file_path=Member/yang-acer/file_002.png "CloudBase Architecture")
+![CloudBase-arch.png](http://140.123.101.146/NUWeb_Site.cht/show_page.php?file_path=dir_024/dir_004/dir_001/file_001.png "CloudBase Architecture")
 
 __II. Client__
 ----
