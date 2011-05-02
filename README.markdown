@@ -1,12 +1,12 @@
 #OUTLINE
 
-__I. Introduction__
+##__I. Introduction__
 
 Big Picture
 ![CloudBase-arch.png](http://140.123.101.146/NUWeb_Site.cht/show_page.php?file_path=dir_024/dir_004/dir_001/file_001.png "CloudBase Architecture")
 
-__II. Client__
-----
+##__II. Client__
+
 1. CloudAgent
 
 	1.1 Installation/Building
@@ -24,8 +24,8 @@ __II. Client__
 	
 	1.5 Example Application - Cloudback
 	
-__III. Server__
-----
+##__III. Server__
+
 1. CloudGate
 
 	1.1 Installation/Building
